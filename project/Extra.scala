@@ -8,9 +8,9 @@ import bintray.BintrayKeys.{bintrayRepository, bintrayOrganization}
 
 object Extra {
 
-  val sbtPluginSettings = ScriptedPlugin.scriptedSettings ++ Seq(
+  val sbtPluginSettings = ScriptedPlugin.projectSettings ++ Seq(
       organization := "org.scala-native",
-      version := "0.2.2",
+      version := "0.3.3-SNAPSHOT",
       sbtPlugin := true,
       scriptedLaunchOpts ++= Seq(
         "-Dplugin.version=" + version.value,
