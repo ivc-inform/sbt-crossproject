@@ -3,3 +3,4 @@ sbt-crossproject-test/src/sbt-test/**/project
 !sbt-crossproject-test/src/sbt-test/new-api/scala-native-only/project
 bin/.coursier
 bin/.scalafmt
+.idea/
