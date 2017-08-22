@@ -4,7 +4,7 @@ import ScriptedPlugin._
 
 import scala.util.Try
 
-//import bintray.BintrayKeys.{bintrayRepository, bintrayOrganization}
+import bintray.BintrayKeys.{bintrayRepository, bintrayOrganization}
 
 object Extra {
 
@@ -43,9 +43,9 @@ object Extra {
         browseUrl = url("https://github.com/scala-native/sbt-crossproject"),
         connection = "scm:git:git@github.com:scala-native/sbt-crossproject.git"
       )
-    )//,
-    //bintrayRepository := "sbt-plugins",
-    //bintrayOrganization := Some("scala-native")
+    ),
+    bintrayRepository := "sbt-plugins",
+    bintrayOrganization := Some("scala-native")
   )
 
   lazy val noPublishSettings = Seq(
