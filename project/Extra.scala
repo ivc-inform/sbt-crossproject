@@ -1,10 +1,10 @@
-import bintray.BintrayKeys.{bintrayOrganization, bintrayRepository}
 import sbt.Keys._
 import sbt._
+import ScriptedPlugin._
 
 object Extra {
 
-    val sbtPluginSettings = ScriptedPlugin.scriptedSettings ++ Seq(
+    val sbtPluginSettings = scriptedSettings ++ Seq(
         organization := "org.scala-native",
         version := "0.2.3-SNAPSHOT",
         sbtPlugin := true,
