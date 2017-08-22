@@ -1,11 +1,7 @@
+import bintray.BintrayKeys.{bintrayOrganization, bintrayRepository}
+import sbt.Keys._
+import sbt.ScriptedPlugin.autoImport._
 import sbt._
-import Keys._
-import ScriptedPlugin._
-import ScriptedPlugin.autoImport._
-
-import scala.util.Try
-
-import bintray.BintrayKeys.{bintrayRepository, bintrayOrganization}
 
 object Extra {
 
