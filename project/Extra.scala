@@ -1,6 +1,7 @@
 import sbt._
 import Keys._
 import ScriptedPlugin._
+import ScriptedPlugin.autoImport._
 
 import scala.util.Try
 
