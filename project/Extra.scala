@@ -22,28 +22,6 @@ object Extra {
         )
     )
 
-    // to publish plugin (we only need to do this once, it's already done!)
-    // follow: http://www.scala-sbt.org/0.13/docs/Bintray-For-Plugins.html
-    // then add a new package ()
-    // name: sbt-crossproject, license: BSD-like, version control: git@github.com:scala-native/sbt-crossproject.git
-    // to be available without a resolver
-    // follow: http://www.scala-sbt.org/0.13/docs/Bintray-For-Plugins.html#Linking+your+package+to+the+sbt+organization
-    /*lazy val publishSettings = Seq(
-      publishArtifact in Compile := true,
-      publishArtifact in Test := false,
-      licenses := Seq(
-        "BSD-like" -> url("http://www.scala-lang.org/downloads/license.html")
-      ),
-      scmInfo := Some(
-        ScmInfo(
-          browseUrl = url("https://github.com/scala-native/sbt-crossproject"),
-          connection = "scm:git:git@github.com:scala-native/sbt-crossproject.git"
-        )
-      ),
-      bintrayRepository := "sbt-plugins",
-      bintrayOrganization := Some("scala-native")
-    )*/
-
     lazy val publishSettings = Seq(
         publishArtifact in Compile := true,
         publishArtifact in Test := false,
