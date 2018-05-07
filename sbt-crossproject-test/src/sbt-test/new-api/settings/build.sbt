@@ -6,7 +6,7 @@ lazy val bar =
   crossProject(JSPlatform, JVMPlatform, NativePlatform)
     .crossType(CrossType.Pure)
     .settings(
-      scalaVersion := "2.12.3",
+      scalaVersion := "2.12.5",
       description := "common settings"
     )
     .jsSettings(

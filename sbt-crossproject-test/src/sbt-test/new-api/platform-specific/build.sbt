@@ -8,7 +8,7 @@ lazy val bar =
   crossProject(NativePlatform)
     .crossType(CrossType.Pure)
     .settings(
-      scalaVersion := "2.12.3",
+      scalaVersion := "2.12.5",
       organization := g,
       moduleName := a,
       version := v
@@ -19,7 +19,7 @@ lazy val barNative = bar.native
 lazy val foo =
   crossProject(JVMPlatform, NativePlatform)
     .settings(
-      scalaVersion := "2.12.3"
+      scalaVersion := "2.12.5"
     )
     .nativeSettings(
       libraryDependencies += g %%% a % v,
