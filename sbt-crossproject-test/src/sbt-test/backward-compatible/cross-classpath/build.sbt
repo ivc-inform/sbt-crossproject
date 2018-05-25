@@ -1,7 +1,7 @@
 import sbtcrossproject.crossProject
 
 lazy val old = crossProject
-  .settings(scalaVersion := "2.12.5")
+  .settings(scalaVersion := "2.12.")
   .jsSettings(description := "js description")
   .jvmSettings(description := "jvm description")
 

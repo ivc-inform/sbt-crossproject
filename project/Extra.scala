@@ -6,12 +6,12 @@ object Extra {
 
     val sbtPluginSettings = ScriptedPlugin.projectSettings ++ Seq(
         organization := "org.scala-native",
-        version := "0.3.4",
+        version := "0.3.6",
         sbtPlugin := true,
         scriptedLaunchOpts ++= Seq(
             "-Dplugin.version=" + version.value,
             "-Dplugin.sn-version=0.3.2",
-            "-Dplugin.sjs-version=0.6.22"
+            "-Dplugin.sjs-version=0.6.23"
         ),
         scalacOptions ++= Seq(
             "-deprecation",
